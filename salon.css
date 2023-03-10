@@ -154,14 +154,14 @@ nav a{
     transform: translateY(0px);
     opacity: 1;
 }
-@keyframes expand-fade-in{
+/*@keyframes expand-fade-in{
     from{ opacity: 0%; width: 0%;}
     to{ opacity: 100%;}
 }
 @keyframes fade-in{
     from{opacity: 0%;}
     to{opacity: 100%;}
-}
+}*/
 .offer{
     margin-bottom: 15%;
 }
