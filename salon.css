@@ -144,6 +144,16 @@ nav a{
     border: 10px black solid;
     padding: 5px;
 }
+.fadein {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.fadein.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
 @keyframes expand-fade-in{
     from{ opacity: 0%; width: 0%;}
     to{ opacity: 100%;}
