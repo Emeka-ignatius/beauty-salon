@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Shine Salon</title>
     <link rel="stylesheet" href="salon.css">
-    <link rel="stylesheet" href="main.js">
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -26,12 +26,12 @@
                     <li><a href="contact us page.html"><strong>CONTACT US</strong></a></li>
                     <li><a href="services.html"><strong>SERVICES</strong></a></li>
                     <li><a href="shop.html"><strong>SHOP</strong></a></li>
-                    <li><a href="book.html"><strong>BOOK</strong></a></li>
-                    <li><a href="book.html"><strong>OUR BLOG</strong></a></li>
+                    <li><a href="#"><strong>BOOK</strong></a></li>
+                    <li><a href="#"><strong>OUR BLOG</strong></a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
-            <a href="book.html" class="hero-btn"><strong>BOOK NOW</strong></a>
+            <a href="shop.html" class="hero-btn"><strong>BOOK NOW</strong></a>
         </nav> 
     </section>
 
@@ -41,7 +41,7 @@
         <div class="wel-come">
         <h1>Award-Winning <br>
             Beauty Salon 
-            In Lagos. <br><a href="book.html">BOOK NOW</a></h1>
+            In Lagos. <br><a href="services.html">BOOK NOW</a></h1>
            
         </div>
     </section>
@@ -75,11 +75,12 @@
             </div>
        </section>
        <div class="shop__container">
-        <div class="img"> <img src="images/Product/hair tools.jpg" alt="" style="width: 100%;"height="390rem" > <h4>Hair Tools</h4> <a href="book.html">Shop Now</a></h1></div>
+        <div class="img"> <img src="images/Product/hair tools.jpg" alt="" style="width: 100%;"height="390rem" > <h4>Hair Tools</h4> <a href="shop.html">Shop Now</a></h1></div>
 
-        <div class="img"> <img src="images/Product/hair care.jpg" alt="" style="width: 100%;" height="390rem"> <h4>Special Hair Care</h4> <a href="book.html">Shop Now</a></h1></div>
+        <div class="img"> <img src="images/Product/hair care.jpg" alt="" style="width: 100%;" height="390rem"> <h4>Special Hair Care</h4> <a href="shop.html">Shop Now</a></h1></div>
        </div>
-
+       
+<!-----------------------REVIEWS---------------------->
        <div class="col-container">
              <div class="col">
                 <div class="img-col">
@@ -97,9 +98,6 @@
             </div>
         </div>
             
-         <!-----------------------REVIEWS---------------------->
-        
-
             <!-----------------------LOCATION , WORK DAYS & MAP DIRECTION---------------------->
         <section class="location-duration">
            <div class="loc-hr">
@@ -112,7 +110,7 @@
                             113 Avenue, FESTAC <br>
                             Town, Lagos.
                          <br>
-                            <a href="tel:(234)809 0651-397">(234)809 0651-397</a>
+                            <a href="tel:(234)907 9568-910">(234)907 9568-910</a>
                             <br>
                          <a href="mailto:tech.fusco@gmail.com">tech.fusco@gmail.com</a>
                         </p><br><br>
@@ -172,49 +170,6 @@
             <h4>Shine Salon, 113 Avenue FESTAC Town, Lagos.</h4>
             <p>Copyright ShineSalon.com &copy; 2022</p>
         </div>
-            <!----------------- JAVASCRIPT FOR SHOP CAROUSEL -------------->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-      <script>
-          
-          $('.owl-carousel').owlCarousel({
-          loop:true,
-          margin:0,
-          nav:true,
-          dots:false,
-          autoplay:true,
-          autoplayTimeout:3000,
-          responsive:{
-              0:{
-                  items:1
-              },
-              768:{
-                  items:2,
-                  margin:10,
-              },
-              1000:{
-                  items:3
-              }
-          }
-      })
-      </script>
-
-     <!------ JavaScript For Toggle Menu ------->
-     <script>
-
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu(){
-            navLinks.style.right = "0"
-        }
-        function hideMenu(){
-       navLinks.style.right = "-200px"
-        }
-
-        window.addEventListener("scroll", function(){
-            var nav = document.querySelector("nav");
-            nav.classList.toggle("sticky", window.scrollY > 0);
-        })
-    </script>
 </body>
+    <script src="main.js"></script>
 </html>

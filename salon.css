@@ -118,17 +118,6 @@ nav a{
 .welcome img{
     float: right;
     width: 50%;
-    animation-name:expand-fade-in ;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both;    
-}
-.wel-come{
-    animation-name: fade-in;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: both;
-    animation-delay: 1s;
 }
 .wel-come h1{
     font-size: 50px;
@@ -148,20 +137,12 @@ nav a{
     position: relative;
     transform: translateY(150px);
     opacity: 0;
-    transition: all 2s ease;
+    transition: all 3s ease;
 }
 .fadein.active{
     transform: translateY(0px);
     opacity: 1;
 }
-/*@keyframes expand-fade-in{
-    from{ opacity: 0%; width: 0%;}
-    to{ opacity: 100%;}
-}
-@keyframes fade-in{
-    from{opacity: 0%;}
-    to{opacity: 100%;}
-}*/
 .offer{
     margin-bottom: 15%;
 }
@@ -266,8 +247,7 @@ nav a{
     object-fit: contain;
     aspect-ratio: 1/1;
     cursor: pointer;
-    transition: all 0.3s ease;
-    
+    transition: all 0.3s ease;  
 }
 .img img{
     transition: all 0.3s ease;
@@ -299,20 +279,18 @@ nav a{
     display: flex;
     flex-wrap: wrap;
     margin: 5%;
-    
-  }
+}
 .img-col img{
     width: 20%;
     border-radius: 50%;
     margin: 0 40% 2%;
-    
-    }
-  .col {
+}
+.col {
     flex: 50%;
     padding: 0 20px;
     box-sizing: border-box;
     justify-content: center;
-  }
+}
 .col h2{
     padding: 10px;
     font-size: 20px;
@@ -366,14 +344,12 @@ nav a{
  }
 .direction{
     margin-left: 30px;
-   margin-top: -210px;
-   padding-bottom: 30px;
+    margin-top: -210px;
+    padding-bottom: 30px;
 }
 #footer{
     background-color: black;
     padding-bottom: 100px;
-   
-
 }
 .footer{
     color: #fff;
@@ -448,25 +424,319 @@ nav a{
 
 /*======================= ABOUT PAGE =================================*/
 .root-header{
-    min-height: 80vh;
+    margin-top: 8.5%;
+    min-height: 60vh;
     width: 100%;
-    background-image: linear-gradient(rgba(5, 11, 36, 0.158),rgba(4,9,30,0.7)), url(images/Spa/2022-06-01.png);
+    background-image:linear-gradient(rgba(8, 14, 37, 0.452),rgba(6, 11, 29, 0.411)),url( images/Spa/2022-06-01.png);
     background-position: center;
     background-size: cover;
-    position: relative;
+}
+.text-box h3{
+    width: fit-content;
+    text-align: center;
+    font-size: 15px;
+    margin: 4% 3% 0 40%;   
 }
 .text-box{
-    width: 90%;
-    color: #fff;
+    width: fit-content;
+    color: black;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    background-color: #fff;
+    background-size: contain;
+    top: 30%;
+    right: 60%;
+    transform: translate(10%, 2%);
     text-align: center;
+    border-radius: 10px;   
 }
 .text-box p{
-    margin: 10px 0 40px;
-    font-size: 14px;
+    margin: 5%;
+    font-size: 30px;
     font-family: 'Playfair Display', serif;
-    color: #fff;
+    width: fit-content;
 }
+.col-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 5%;    
+}
+.image-col img{
+    width: 60%;
+    margin: 0 50% 0 30%;
+}
+.column {
+    flex: 50%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+.column h6{
+    text-align: center;
+    margin: 3% 0 0 0 0;
+    font-size: 15px;
+}
+.column h2{
+    padding: 10% 10px 0 10px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: center;
+}
+.column p{
+    padding: 20px ;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+}  
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+} 
+.col-umn {
+    flex-basis: calc(30% - 20px);
+    margin: 5% 0 5% 0;
+}
+.img-col-umn img{
+    width: 30%;
+    border-radius: 30%;
+    margin: 0 35% 5%;
+}
+.col-umn h4 {
+    font-size: 24px;
+    font-weight: bold;
+    padding-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+} 
+
+.col-umn p{
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+/*=======================CONTACT US PAGE ========================*/
+.sub-root-header{
+    margin-top: 8.5%;
+    min-height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(8, 14, 37, 0.452),rgba(6, 11, 29, 0.411)),url( images/istockphoto-1224292356-612x612.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.contact-text-box h3{ 
+    text-align: center;
+    font-size: 30px;
+    margin: 4% 2% 0 2%;   
+}
+.contact-text-box{
+    width: 50%;
+    color: black;
+    position: absolute;
+    background-color: #fff;
+    background-size: contain;
+    top: 30%;
+    right: 30%;
+    transform: translate(10%, 2%);
+    text-align: center;
+    border-radius: 10px;   
+}
+.contact-text-box p{
+    margin: 5%;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;   
+}
+.sub-direction{
+    margin: 5% 10% 2% 10%;
+}
+.sub-location-duration{
+    margin: 0 0 2% 0;
+}
+.loc-hour{
+    text-align: left;
+    padding-left: 10%;
+    font-size: 25px;
+}
+.sub-loc{
+    padding-left: 40%;
+    font-weight: 80;
+    font-style: italic;
+    font-size: 25px;  
+}
+.sub-loc p a{
+    text-decoration: none;
+}
+.loc-hours{
+    font-size: 25px;
+    font-style: italic;
+    margin-left: 10%;
+}
+.loca-tion{
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+.loca-tion iframe{
+    width: 100%;
+}
+.contact-us{
+    margin: 5% auto 2% auto;
+    width: 80%;
+   
+}
+.content-col{
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+.content-col div{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.content-col div .fa{
+    font-size: 28px;
+    color: black;
+    margin: 10px ;
+    margin-right: 30px;
+}
+.content-col div p{
+    padding: 0;
+}
+.content-col div h5{
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    margin-bottom: 5px;
+    color: black;
+    font-weight: 400;
+}
+.content-col input, .content-col textarea{
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 17px;
+    outline: none;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+/*========================== SERVICES PAGE =======================*/
+.root-root-header{
+    margin-top: 8.5%;
+    min-height: 50vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(8, 14, 37, 0.452),rgba(6, 11, 29, 0.411)),url( images/Spa/Featured.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.services-text-box h3{
+   
+    text-align: center;
+    font-size: 30px;
+    margin: 4% 2% 0 2%;   
+}
+.services-text-box{
+    width: 50%;
+    color: black;
+    position: absolute;
+    background-color: #fff;
+    background-size: contain;
+    top: 30%;
+    right: 30%;
+    transform: translate(10%, 2%);
+    text-align: center;
+    border-radius: 10px;   
+}
+.services-text-box p{
+    margin: 5%;
+    font-size: 15px;
+    font-family: 'Playfair Display', serif;   
+}
+.salon-services {
+    background-color: #f7f7f7;
+    padding: 50px 0;
+  }
+  
+  .services-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  .services-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .services-col {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-bottom: 40px;
+    
+  }
+  
+  .service {
+    height: 70vh;
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+  }
+  .service:hover{
+    background: linear-gradient(rgba(255, 183, 183, 0.911),rgba(128, 124, 124, 0.781));
+    transform: scale(1.1);
+    transition: all 2s ease;
+   
+  }
+  .service img:hover{
+    transform: scale(1.1);
+    transition: all 2s ease;
+}
+  .service img {
+    width: 100%;
+    height: 30vh;
+    aspect-ratio: 1/1;
+    object-fit: cover; 
+    margin-bottom: 15px;
+  }
+  
+  .service h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .service p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+  
+  .service a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: pink;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .service a:hover {
+    background-color: rgba(128, 124, 124, 0.781);
+  }
+.browse-services{
+    text-align: center;
+    margin: 3% auto 5% auto;
+   
+}
+.browse h1{
+    font-size: 30px;
+    margin: 2%;
+    font-family: 'Playfair Display', serif;
+}
+.browse p{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 5%;
+    font-family: 'Times New Roman', Times, serif;
+}
+

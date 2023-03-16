@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Our Services</title>
     <link rel="stylesheet" href="salon.css">
+    <script src="main.js"></script>
 </head>
 <body>
-    <section id="navbar">
-        <a href="home page.html"><img src="images/Black_Gold_Elegant_Illustration_Fashion_Brand_Logo-removebg-preview.png"></a>
-        
+    <section id="navbar">  
         <nav>
             <div class="nav-links" id="navLinks">
+                <img src="images/Black_Gold_Elegant_Illustration_Fashion_Brand_Logo-removebg-preview.png"></a>
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html"><strong>HOME</strong></a></li>
@@ -21,39 +21,62 @@
                     <li><a href="contact us page.html"><strong>CONTACT US</strong></a></li>
                     <li><a href="services.html"><strong>SERVICES</strong></a></li>
                     <li><a href="shop.html"><strong>SHOP</strong></a></li>
-                    <li><a href="book.html"><strong>BOOK</strong></a></li>
-                    <li><a href="book.html"><strong>OUR BLOG</strong></a></li>
+                    <li><a href="#"><strong>BOOK</strong></a></li>
+                    <li><a href="#"><strong>OUR BLOG</strong></a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
+            <a href="shop.html" class="hero-btn"><strong>BOOK NOW</strong></a>
         </nav> 
+
+        <div class="services-text-box">
+            <h3>Our Services</h3>
+            <p>Browse our premiere services</p> 
+        </div>
     </section>
     
-    <section class="offer">
-        <img src="images/ezgif.com-gif-maker.png">
-        <div class="offer-page">
-            <h1>WHAT WE OFFER</h1>
-            <h6>Skin Health. Nail Love.</h6>
-            <p> <strong> We take an holistic approach to your health <br> & beauty.
-                <br><br>
-            Our team work with clients on a very <br> personal level to achieve their ideas about a <br> positive image.</strong><br><br><br><br><a href="services.html">EXPLORE OUR SERVICES</a></p>
-        </div>
+    <section class="root-root-header">       
     </section>
-
-    <section id="footer">
-        <div class="footer">
-           <h4>Stay Connnected</h4>
-           <br>
-           <p>Get the latest when you sign up for our newsletter.</p>
+    
+    <section class="salon-services">
+        <div class="services-container">
+          
+          <div class="services-row">
+            <div class="services-col">
+              <div class="service">
+                <img src="images/Spa/manicure.jpg" alt="Haircut">
+                <h3>Manicure ($50)</h3>
+                <p>45 min</p>
+                <a href="#">Description goes here</a>
+              </div>
+            </div>
+            <div class="services-col">
+              <div class="service">
+                <img src="images/Spa/pedicure.jpg" alt="Hair Color">
+                <h3>Pedicure ($50)</h3>
+                <p>45 min</p>
+                <a href="#">Description goes here</a>
+              </div>
+            </div>
+            <div class="services-col">
+              <div class="service">
+                <img src="images/Spa/combo.jpg" alt="Manicure">
+                <h3>Combo ($75)</h3>
+                <p>60 min</p>
+                <a href="#">Description goes here</a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="newsletter">
-            <form>
-                <input type="email" required="required" placeholder="Enter Your Email">
-                <button type="submit" class="button1"> <span> Subscribe</span></button>
-            </form>
+      </section>
+      
+      <section class="browse-services">
+        <div class="browse">
+          <h1>Browse All Our Services</h1>
+          <p>To browse all our services and see available times for appointments, visit our <br> appointment scheduler.</p>
         </div>
-       
-    </section>
+        <a href="services.html" class="hero-btn"><strong>Browse all services</strong></a>
+      </section>
     <hr>
     <div class="news-letter">
         <h4>Book Now</h4>
